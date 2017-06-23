@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/superflycss/variables-layout.svg?branch=master)](https://travis-ci.org/superflycss/variables-layout)
 
-# Layout utilities
-
 ## Installation
 
 See [Installation](https://github.com/superflycss/superflycss/#installation).
