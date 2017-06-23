@@ -1,0 +1,220 @@
+/** @define variables */
+
+:root {
+
+  --u-flex {
+    display: flex;
+  }
+
+  --u-inline-flex {
+    display: inline-flex;
+  }
+
+  --u-flex-row {
+    flex-direction: row;
+  }
+
+  --u-flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  --u-flex-column {
+    flex-direction: column;
+  }
+
+  --u-flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  --u-flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  --u-flex-no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  --u-flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  --u-flex-justify-start {
+    justify-content: flex-start;
+  }
+
+  --u-flex-justify-end {
+    justify-content: flex-end;
+  }
+
+  --u-flex-justify-center {
+    justify-content: center;
+  }
+
+  --u-flex-justify-between {
+    justify-content: space-between;
+  }
+
+  --u-flex-justify-around {
+    justify-content: space-around;
+  }
+
+  --u-flex-align-items-start {
+    align-items: flex-start;
+  }
+
+  --u-flex-align-items-end {
+    align-items: flex-end;
+  }
+
+  --u-flex-align-items-center {
+    align-items: center;
+  }
+
+  --u-flex-align-items-stretch {
+    align-items: stretch;
+  }
+
+  --u-flex-align-items-baseline {
+    align-items: baseline;
+  }
+
+  --u-flex-align-content-start {
+    align-content: flex-start;
+  }
+
+  --u-flex-align-content-end {
+    align-content: flex-end;
+  }
+
+  --u-flex-align-content-center {
+    align-content: center;
+  }
+
+  --u-flex-align-content-stretch {
+    align-content: stretch;
+  }
+
+  --u-flex-align-content-between {
+    align-content: space-between;
+  }
+
+  --u-flex-align-content-around {
+    align-content: space-around;
+  }
+
+  --u-flex-align-self-start {
+    align-self: flex-start;
+  }
+
+  --u-flex-align-self-end {
+    align-self: flex-end;
+  }
+
+  --u-flex-align-self-center {
+    align-self: center;
+  }
+
+  --u-flex-align-self-stretch {
+    align-self: stretch;
+  }
+
+  --u-flex-align-self-baseline {
+    align-self: baseline;
+  }
+
+  --u-flex-align-self-auto {
+    align-self: auto;
+  }
+
+  --u-flex-order-first {
+    order: -1;
+  }
+
+  --u-flex-order-last {
+    order: 1;
+  }
+
+  --u-flex-order-none {
+    order: 0;
+  }
+
+   @for $factor from 1 to 5 {
+     --u-flex-grow$(factor) {
+       flex: $(factor) 1 0%;
+     }
+   }
+
+   @for $factor from 0 to 5 {
+     --u-flex-shrink$(factor) {
+       flex-shrink: $(factor);
+     }
+   }
+
+  --u-flex-expand {
+    margin: auto;
+  }
+
+  --u-flex-expand-left {
+    margin-left: auto;
+  }
+
+  --u-flex-expand-right {
+    margin-right: auto;
+  }
+
+  --u-flex-expand-top {
+    margin-top: auto;
+  }
+
+  --u-flex-expand-bottom {
+    margin-bottom: auto;
+  }
+
+  --u-flex-basis-auto {
+    flex-basis: auto;
+  }
+
+  --u-flex-basis0 {
+    flex-basis: 0;
+  }
+
+  /*
+   * Shorthand
+   *
+   * Declares all values instead of keywords like 'initial' to work around IE10
+   * https://www.w3.org/TR/css-flexbox-1/#flex-common
+   *
+   * 1. Fixes issue in IE 10 where flex-basis is ignored - https://git.io/vllMt
+   *    This ensures it overrides flex-basis set in other utilities.
+   */
+
+  /*
+   * Sizes the item based on the width/height properties
+   */
+
+  --u-flex-initial {
+    flex: 0 1 auto;
+    flex-basis: auto; /* 1 */
+  }
+
+  /*
+   * Sizes the item based on the width/height properties, but makes them fully
+   * flexible, so that they absorb any free space along the main axis.
+   */
+
+  --u-flex-auto {
+    flex: 1 1 auto;
+    flex-basis: auto; /* 1 */
+  }
+
+  /*
+   * Sizes the item according to the width/height properties, but makes the flex
+   * item fully inflexible. Similar to initial, except that flex items are
+   * not allowed to shrink, even in overflow situations.
+   */
+
+  --u-flex-none {
+    flex: 0 0 auto;
+    flex-basis: auto; /* 1 */
+  }
+}

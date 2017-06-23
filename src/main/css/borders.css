@@ -1,0 +1,37 @@
+/** @define variables */
+
+:root {
+  @for $factor from 0 to 20 {
+    --u-border-width-$(factor)px {
+      border-width: $(factor)px;
+    }
+  }
+
+  @for $factor from 0 to 20 {
+    --u-border-radius-$(factor)px {
+      border-radius: $(factor)px;
+    }
+  }
+
+  @each $dimension in top, bottom, left, right {
+    @for $factor from 0 to 20 {
+      --u-border-$(dimension)-width-$(factor)px {
+        border-$(dimension)-width: $(factor)px;
+      }
+    }
+  }
+
+  @each $style in none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit {
+    --u-border-style-$(style) {
+      border-style: $(style);
+    }
+  }
+
+  @each $dimension in top, bottom, left, right {
+    @each $style in none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit {
+      --u-border-$(dimension)-style-$(style) {
+        border-$(dimension)-style: $(style);
+      }
+    }
+  }
+}
