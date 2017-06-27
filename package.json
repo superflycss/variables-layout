@@ -1,6 +1,6 @@
 {
   "name": "@superflycss/variables-layout",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Layout variables",
   "main": "src/main/css/index.css",
   "scripts": {
@@ -31,8 +31,10 @@
     "@superflycss/task-clean": "^1.0.0",
     "@superflycss/task-deploy": "^1.0.0",
     "@superflycss/task-test": "^1.0.0",
-    "@superflycss/variables-dimension": "^1.0.0",
     "gulp": "^3.9.1",
     "npm-check-updates": "^2.11.3"
+  },
+  "dependencies": {
+    "@superflycss/variables-dimension": "^1.0.1"
   }
 }
