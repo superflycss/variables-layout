@@ -1,5 +1,7 @@
 # Layout variables
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/superflycss/variables-layout.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/superflycss/variables-layout.svg?branch=master)](https://travis-ci.org/superflycss/variables-layout)
 
 ## Installation
