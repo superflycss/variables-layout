@@ -1,5 +1,8 @@
 /** @define variables */
 
+/** Note that we have mirrored the zindex variables from variables-dimension 
+ *  in order to mirror the corresponding utilty in utilities-layout.
+ */
 @import "@superflycss/variables-dimension";
 
 :root {
