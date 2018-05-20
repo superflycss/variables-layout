@@ -1,0 +1,37 @@
+{
+  "name": "@superflycss/variables-layout",
+  "version": "2.0.0",
+  "description": "Layout variables",
+  "main": "index.css",
+  "scripts": {
+    "update": "ncu -a && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superflycss/variables-layout.git"
+  },
+  "keywords": [
+    "superflycss",
+    "layout",
+    "css",
+    "variables",
+    "flexbox",
+    "borders",
+    "padding",
+    "position",
+    "height-width",
+    "margins"
+  ],
+  "author": "Ole Ersoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superflycss/variables-layout/issues"
+  },
+  "homepage": "https://github.com/superflycss/variables-layout#readme",
+  "devDependencies": {
+    "npm-check-updates": "^2.12.1"
+  },
+  "dependencies": {
+    "@superflycss/variables-dimension": "^1.0.1"
+  }
+}

@@ -1,0 +1,14 @@
+/** @define variables */
+
+/** Note that we have mirrored the zindex variables from variables-dimension 
+ *  in order to mirror the corresponding utilty in utilities-layout.
+ */
+@import "@superflycss/variables-dimension";
+
+:root {
+  @each $type in zindex-dropdown-backdrop, zindex-navbar, zindex-dropdown, zindex-fixed, zindex-modal-backdrop, zindex-modal, zindex-popover, zindex-tooltip {
+      --u-$(type) {
+          z-index: var(--$(type));
+    }
+  }
+}
