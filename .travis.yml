@@ -13,5 +13,5 @@ before_deploy:
   - npm i -g npm
   - npm i
   - sfc build
-  - sed -i '/target/d' .gitignore
   - sed -i '/deploy/d' .gitignore
+  - sed -i '/target/d' .gitignore
